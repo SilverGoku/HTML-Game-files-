@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taş Kağıt Makas Oyunu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Taş Kağıt Makas Oyunu</h1>
+    <p>Seçiminizi yapın: <button onclick="makeChoice('rock')">Taş</button> <button onclick="makeChoice('paper')">Kağıt</button> <button onclick="makeChoice('scissors')">Makas</button></p>
+    <p id="result"></p>
+
+    <script>
+        function makeChoice(playerChoice) {
+            const choices = ['rock', 'paper', 'scissors'];
+            const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+            let result;
+            if (playerChoice === computerChoice) {
+                result = "Berabere!";
+            } else if (
+                (playerChoice === 'rock' && computerChoice === 'scissors') ||
+                (playerChoice === 'paper' && computerChoice === 'rock') ||
+                (playerChoice === 'scissors' && computerChoice === 'paper')
+            ) {
+                result = "Kazandınız!";
+            } else {
+                result = "Bilgisayar kazandı!";
+            }
+
+            document.getElementById('result').innerText = `Bilgisayar: ${computerChoice}, Oyuncu: ${playerChoice} - ${result}`;
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taş Kağıt Makas Oyunu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Taş Kağıt Makas Oyunu</h1>
+    <p>Seçiminizi yapın: <button onclick="makeChoice('rock')">Taş</button> <button onclick="makeChoice('paper')">Kağıt</button> <button onclick="makeChoice('scissors')">Makas</button></p>
+    <p id="result"></p>
+
+    <script>
+        function makeChoice(playerChoice) {
+            const choices = ['rock', 'paper', 'scissors'];
+            const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+            let result;
+            if (playerChoice === computerChoice) {
+                result = "Berabere!";
+            } else if (
+                (playerChoice === 'rock' && computerChoice === 'scissors') ||
+                (playerChoice === 'paper' && computerChoice === 'rock') ||
+                (playerChoice === 'scissors' && computerChoice === 'paper')
+            ) {
+                result = "Kazandınız!";
+            } else {
+                result = "Bilgisayar kazandı!";
+            }
+
+            document.getElementById('result').innerText = `Bilgisayar: ${computerChoice}, Oyuncu: ${playerChoice} - ${result}`;
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taş Kağıt Makas Oyunu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Taş Kağıt Makas Oyunu</h1>
+    <p>Seçiminizi yapın: <button onclick="makeChoice('rock')">Taş</button> <button onclick="makeChoice('paper')">Kağıt</button> <button onclick="makeChoice('scissors')">Makas</button></p>
+    <p id="result"></p>
+
+    <script>
+        function makeChoice(playerChoice) {
+            const choices = ['rock', 'paper', 'scissors'];
+            const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+            let result;
+            if (playerChoice === computerChoice) {
+                result = "Berabere!";
+            } else if (
+                (playerChoice === 'rock' && computerChoice === 'scissors') ||
+                (playerChoice === 'paper' && computerChoice === 'rock') ||
+                (playerChoice === 'scissors' && computerChoice === 'paper')
+            ) {
+                result = "Kazandınız!";
+            } else {
+                result = "Bilgisayar kazandı!";
+            }
+
+            document.getElementById('result').innerText = `Bilgisayar: ${computerChoice}, Oyuncu: ${playerChoice} - ${result}`;
+        }
+    </script>
+</body>
+</html>
