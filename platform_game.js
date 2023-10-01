@@ -3,9 +3,9 @@ const ekran_genislik = 800;
 const ekran_yukseklik = 600;
 
 // Renkler
-const siyah = "#000000";
+const black = "#000000";
 const beyaz = "#FFFFFF";
-const kirmizi = "#FF0000";
+const red = "#FF0000";
 
 // Karakter özellikleri
 let karakter_genislik = 50;
@@ -18,7 +18,7 @@ let engel_genislik = 50;
 let engel_yukseklik = 20;
 let engel_x = Math.floor(Math.random() * (ekran_genislik - engel_genislik));
 let engel_y = 0;
-let engel_hizi = 1.25;
+let engel_hizi = 2;
 
 // Canvas elementini alın
 const canvas = document.getElementById("gameCanvas");
@@ -41,7 +41,7 @@ function oyunDongusu() {
     window.addEventListener("keyup", (e) => {
         tuslar[e.key] = false;
     });
-    karakter_x += (tuslar["ArrowRight"] - tuslar["ArrowLeft"]) * 5;
+    karakter_x += (tuslar["ArrowRight"] - tuslar["ArrowLeft"]) * 2.5;
 
     // Engeli aş
     engel_y += engel_hizi;
@@ -61,11 +61,11 @@ function oyunDongusu() {
     }
 
     // Canvas'ı temizle
-    context.fillStyle = siyah;
+    context.fillStyle = black;
     context.fillRect(0, 0, ekran_genislik, ekran_yukseklik);
 
     // Karakteri çiz
-    context.fillStyle = kirmizi;
+    context.fillStyle = red;
     context.fillRect(karakter_x, karakter_y, karakter_genislik, karakter_yukseklik);
 
     // Engeli çiz
